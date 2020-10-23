@@ -48,12 +48,6 @@
             <artifactId>testng</artifactId>
             <version>6.14.3</version>
         </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -75,12 +69,7 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <properties>
-                        <property>
-                            <name>testnames</name>
-                            <value>${selectedTests}</value>
-                        </property>
-                    </properties>
+
                 </configuration>
                 <dependencies>
                     <dependency>
