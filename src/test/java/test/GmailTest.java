@@ -38,8 +38,8 @@ public class GmailTest {
      */
     @BeforeTest
     public static void setup() {
-        driver = new ChromeDriver();
         System.setProperty("webdriver.chrome.driver", ConfProperties.getProperty("chromedriverPath"));
+        driver = new ChromeDriver();
 
         loginPage = new LoginPage(driver);
         profilePage = new ProfilePage(driver);
